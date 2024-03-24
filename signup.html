@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1 class="heading">NaukariDekh</h1>
+    <section class="register">
+        
+        <div class="register-form">
+            <h1>
+                Register
+            </h1><br>
+            <form>
+                <label>First Name</label>
+                <input type="text" id="username" required><br>
+                <label>Middle Name</label>
+                <input type="text" id="username" required><br>
+                <label>Last Name</label>
+                <input type="text" id="username" required><br>
+                <label>Phone Number</label>
+                <input type="number">
+                <br>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Your Catergory</option>
+                    <option value="1">Civil</option>
+                    <option value="2">Electric</option>
+                    <option value="3">Random</option>
+                </select>
+                <br>
+
+                <br>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Your City</option>
+                    <option value="1">Pune</option>
+                    <option value="2">Mumbai</option>
+                    <option value="3">Delhi</option>
+                </select>
+                <br>
+
+                <label>Password</label>
+                <input type="password" id="pass" required>
+                <br>
+                <label>Confirm Password</label>
+                <input type="password" id="pass" required>
+                <br>
+                <a href="../index.html">
+                    <button onclick=alert()>Register</button><br><br>
+                </a>
+                
+            </form>
+            <p>Already have an account? <a href="../index.html">Login</a></p>
+        </div>
+    </section>
+    <script>
+        function alert(){
+            prompt("enter your otp")
+        }
+    </script>
+</body>
+</html>
