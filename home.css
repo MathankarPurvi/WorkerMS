@@ -10,12 +10,12 @@ body {
 }
 
 .heading{
-    background-color: black;
+    background-color: rgb(209, 173, 102);
     display: flex;
     color: aliceblue;
     text-align: center;
     justify-content: center;
-    height: 64px;
+    height: 72px;
     align-items: center;
 }
 h1{
@@ -23,7 +23,7 @@ h1{
     margin: 0%;
 }
 .Navbar{
-    background-color: black;
+    background-color: rgb(6, 0, 0);
     color: aliceblue;
 }
 .Navbar ul{
