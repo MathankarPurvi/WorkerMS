@@ -10,7 +10,7 @@ body {
 }
 
 .heading{
-    background-color: rgb(209, 173, 102);
+    background-color: black;
     display: flex;
     color: aliceblue;
     text-align: center;
@@ -23,7 +23,7 @@ h1{
     margin: 0%;
 }
 .Navbar{
-    background-color: rgb(6, 0, 0);
+    background-color: black;
     color: aliceblue;
 }
 .Navbar ul{
@@ -38,7 +38,7 @@ h1{
     padding: 2rem;
 }
 section{
-    background-color: rgb(205, 203, 203);
+    background-color: rgb(255, 255, 255);
 }
 .home-content{
     display: flex;
@@ -62,9 +62,9 @@ section{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-color: rgba(17, 17, 17, 0.605);
+    background-color: rgba(255, 255, 255, 0.605);
     border-radius: 1rem;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     height: 30vh;
 }
 
