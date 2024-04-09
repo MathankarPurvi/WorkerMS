@@ -51,8 +51,11 @@
     font-size: 45px;
     color: rgb(5, 71, 104);
 }
-.another{
-    display: flex;
+h2{
+    text-align: center;
+}
+p{
+    justify-content: center;
 }
 .containers{
     background-color: azure;
@@ -62,8 +65,15 @@
     border-radius: 9px;
     overflow: hidden;
     margin: 3px;
+    
 
 }
 .inner img{
     border-radius: 12px;
+}
+.containerss{
+    display: flex;
+    background-color: rgb(210, 247, 252);
+    padding-left: 15px;
+    border-radius: 20px;
 }
