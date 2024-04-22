@@ -52,8 +52,10 @@ p{
     list-style-type: none;
     gap: 8rem;
 }
-.nav ul li a{
+.nav ul li {
     text-decoration: none;
+    color: black;
+    
 }
 section{
     background-color: rgb(255, 255, 255);

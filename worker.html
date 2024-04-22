@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NaukariDekh | Worker</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -13,7 +18,7 @@
     .navbar {
       background-color: rgb(139, 195, 227);
       padding-top: 5px;
-      padding-left: 160px;
+      padding-left: 10px;
       color: rgb(0, 0, 0);
       font-weight: 700;
       height: 75px;
@@ -25,6 +30,8 @@
       border-radius: 12px;
       position: sticky;
       top: 0;
+      display: flex;
+      gap: 40px;
 
     }
 
@@ -35,6 +42,7 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+
     }
 
     .dropdown {
@@ -86,43 +94,95 @@
       display: block;
     }
 
-    .container {
+    .maincontainer {
       display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      width: 400px;
-      height: 400px;
-      margin: 300px;
-      padding: 12px;
-      padding-top: 460px;
-      padding-left: 450px;
+      width: 68vw;
+      margin: 80px;
+      padding: 24px 135px 16px;
+      gap: 50px;
 
+    }
+     .heading{
+      padding-top: 30px;
+     }
+    .container {
+      border: 1px solid #d7d3d3;
+      border-radius: 6px;
+      padding: 23px;
+      background: #fff;
+      width: 316px;
+      height: 460px;
+      display: inline;
 
     }
 
-    .item {
-      align-items: center;
-      justify-content: center;
-      border: 1px solid black;
-      margin: 8px;
+    .anothercontainer {
       padding: 8px;
-      text-align: center;
+      height: 45px;
     }
+    .container span{
+      font-size: 21px;
+    }
+    h5{
+      font-weight: 300;
+      font-size: 18px;
+    }
+    
+    .item {
+      background-color: #fff;
+      border: 1px solid black;
+      margin: 5px;
+      padding: 10px;
+      /*text-align: center;*/
+      box-shadow: 0 0 4px rgba(72, 72, 72, .12), 0 2px 2px rgba(72, 72, 72, .08);
+      border-radius: 8px;
+      height: 230px;
 
+
+    }
+    input{
+      padding: 7px;
+    }
     h2 {
       align-items: center;
+
     }
 
-    button {
+    h4 {
+      color: #8A8A88;
+    }
+
+    .anothercontainer button {
       color: rgb(2, 2, 3);
-      background-color: aqua;
+      background-color: #52ffff70;
       border-radius: 8px;
       font-size: 15px;
+      padding: 4px;
+      align-content: space-evenly ;
     }
 
-    a {
+    a { 
       padding: 30px;
+    }
+
+    item span {
+      border: 1px dotted black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .first {
+      display: flex;
+      gap: 9px;
+    }
+
+    .init {
+      border: 2px solid black;
+      border-radius: 8px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 4px;
+
     }
   </style>
 </head>
@@ -156,100 +216,119 @@
     <a href="contactus.html">Contact us</a>
     <a href="index.html">Logout</a>
   </div>
-  <h2 align="center">Popular Jobs Available</h2>
-  <div class="container">
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
+  <div class="heading">
+  <h2 align="center">Popular Jobs Available</h2></div>
+  <div class=" maincontainer">
+
+    <div class="container">
+      <img src="/images/filter.svg" height="23px"> <span align ="center" >Filters</span><br><br>
+      <h5>Profile : </h5><br>
+      <input type="text"><br><br>
+      <h5>Location : </h5><br>
+      <input type="text"><br><br>
+      <h5>Prefered Payment : </h5><br>
+      <input type="Integer"><br><br>
+      <h5>Gender : </h5><br>
+      <input type="text">
+
     </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
+    <div class="anothercontainer">
+      <div class="item">
+        <span>Actively Hiring</span><br><br>
+        <p>
+        <h2>Heavy Load Carrier</h2><br>
+        <h4>Shah agencies</h4><br><br>
+        <div class="first">
+          <div class="init">Location : Chennai</div>
+          <div class="init">Duration : 3 months</div>
+          <div class="init">Payment : 8000 / month</div>
+        </div>
+        <br><br>
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <span>Actively Hiring</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <div class="item">
+        <h2>
+          Lorem, ipsum.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
+        </p>
+        <button><a href=https://forms.gle/cNCstDD9ETe6Yu726>Apply</a></button>
+      </div>
+      <!-- <div class="item"></div> -->
+      <!-- <div class="item"></div> -->
     </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <div class="item">
-      <h2>
-        Lorem, ipsum.
-      </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita.
-      </p>
-      <button>Apply</button>
-    </div>
-    <!-- <div class="item"></div> -->
-    <!-- <div class="item"></div> -->
   </div>
 </body>
 
