@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <title>Signup</title>
     <link rel="stylesheet" href="register.css">
 </head>
 
@@ -19,13 +18,13 @@
             </h1><br>
             <form>
                 <label>First Name</label>
-                <input type="text" id="username" required><br>
+                <input type="text" id="fname" required><br>
                 <label>Middle Name</label>
-                <input type="text" id="username" required><br>
+                <input type="text" id="mname" required><br>
                 <label>Last Name</label>
-                <input type="text" id="username" required><br>
+                <input type="text" id="lname" required><br>
                 <label>Phone Number</label>
-                <input type="number">
+                <input type="number" id="ph">
                 <br>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Select Your Catergory</option>
@@ -45,7 +44,7 @@
                 <br>
 
                 <label>Password</label>
-                <input type="password" id="pass" required>
+                <input type="password"  required>
                 <br>
                 <label>Confirm Password</label>
                 <input type="password" id="pass" required>
@@ -53,10 +52,10 @@
 
 
             </form>
-            <a href="../index.html">
-                <button onclick=alert()>Register</button><br><br>
+            <a >
+                <button id="btn">Register</button><br><br>
             </a>
-            <p>Already have an account? <a href="../index.html">Login</a></p>
+            <p>Already have an account? <a href="index.html">Login</a></p>
         </div>
     </section>
     <!-- <script>
@@ -64,6 +63,7 @@
             prompt("enter your otp")
         }
     </script>-->
+    <script src="script.js"></script>
 </body>
 
 </html>
